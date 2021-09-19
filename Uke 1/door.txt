@@ -1,0 +1,14 @@
+1. Orienter deg i det området du befinner deg i.
+2. Observer et rektangulært objekt som skiller seg ut fra sidene i området du befinner deg i, og som har en metalldel som stikker ut.
+3. Beveg deg mot dette objektet.
+4. Hvis du treffer objektet, ta et lite steg tibake. Ellers, stopp rett før du treffer objektet.
+5. Observer metalldelen som er på objektet.
+6. Ta tak i denne metalldelen.   
+7. Før denne metalldelen ned.
+8. Mens metalldelen er nede, før objektet fra deg. Virket dette? hopp til linje 9. 
+9. Mens metalldelen er nede, før Ojektet fra deg.
+10. Er det mulig å bevege seg gjennom sidene i området du befinner deg i, slipp metalldelen
+
+a) I skrivende stund har jeg benyttet 10 linjer. Dette er flere linjer enn det jeg ville brukt normalt.
+b) Det å bruke ord som vegg, dørhåndtak osv. men jeg føler at det er ord i forklaringen over ikke eller er de beste. 
+Datamaskiner er dumme. De gjør akuratt det du forklarer dem.
