@@ -5,5 +5,3 @@ def hyd_press(p, g, z):
     pa = p * g * z
     dbar = pa*10**4
     return dbar
-
-print(hyd_press(1025, 10, 100))
