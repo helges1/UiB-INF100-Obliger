@@ -14,6 +14,5 @@ def draw_haiku_frame(first, second, third):
     linje1 = f"@ {maks1}{first} @" 
     linje2 = f"@ {maks2}{second} @" 
     linje3 = f"@ {maks3}{third} @"  
-    ramme2 = f"@{maksAlfa}@@@"
 
-    return ramme + "\n" + linje1 + "\n" + linje2 + "\n" + linje3 + "\n" + ramme2
+    return ramme + "\n" + linje1 + "\n" + linje2 + "\n" + linje3 + "\n" + ramme
