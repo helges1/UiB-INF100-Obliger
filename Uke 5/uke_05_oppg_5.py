@@ -21,11 +21,3 @@ def egen_len(x):
         lengde += 1
 
     return lengde
-
-
-
-
-
-
-
-
