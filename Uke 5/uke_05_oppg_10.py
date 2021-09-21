@@ -19,7 +19,6 @@ def mid(x1_or_y1, x2_or_y2, x3_or_y3, a, b, c):
 
 def incircle_radius(a, b, c):
     """Returns the radius of the incircle of a triangle with sidelengths a, b and c"""
-    # din kode her
     s = float((a + b + c)/2)
     rad = float(sqrt((s - a)*(s - b)*(s - c)/(s)))
     return rad
