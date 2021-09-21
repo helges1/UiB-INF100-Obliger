@@ -10,8 +10,8 @@ def egen_max(a,b):
     return maks
 
 def egen_min(a,b):
-    min = int((a+b-abs(a-b))/2)
-    return min
+    mini = int((a+b-abs(a-b))/2)
+    return mini
 
 def egen_len(a):
 
