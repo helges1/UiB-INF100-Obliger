@@ -13,11 +13,11 @@ def egen_min(a,b):
     min = int((a+b-abs(a-b))/2)
     return min
 
-def egen_len(x):
+def egen_len(a):
 
     lengde = 0
 
-    for i in (x):
+    for i in (a):
         lengde += 1
 
     return lengde
