@@ -17,5 +17,4 @@ def render_image(grid):
                 else:
                     bilde += '\n'
 
-    return(bilde)
-    
+    return bilde

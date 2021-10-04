@@ -1,10 +1,20 @@
 def complement(dna):
     print(dna)
     print("|" * len(dna))
-    # https://stackoverflow.com/questions/25188968/reverse-complement-of-dna-strand-using-python
-    complement_verdi = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'}
-    return "".join([complement_verdi[verdi] for verdi in dna[::-1]])
-    
+    comp_verdi = []
+    for i in dna:
+        if i == "T":
+            comp_verdi.append("A")
+        if i == "A":
+            comp_verdi.append("T")
+        if i == "G":
+            comp_verdi.append("C")
+        if i == "C":
+            comp_verdi.append("G")
+
+    return ''.join(reversed(comp_verdi))
+
+
 
 
 
