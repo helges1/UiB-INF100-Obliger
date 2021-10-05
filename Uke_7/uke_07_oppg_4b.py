@@ -26,4 +26,8 @@ def data_reorganize(verdi):
 
 # Kan også løses med zip
 #
+# ------------------------------
 #
+# def data_reorganize(verdi):
+#   alt = tuple(zip(*verdi))
+#   return alt
