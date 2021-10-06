@@ -24,7 +24,7 @@ def data_reorganize(verdi):
 #   ("lørdag", 13.0),
 # )))
 
-# Kan også løses med zip
+# Kan også løses med zip, men gruppeleder sa det var greit å gjøre det på måten ovenfor.
 #
 # ------------------------------
 #
