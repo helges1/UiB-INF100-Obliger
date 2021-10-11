@@ -1,44 +1,53 @@
-def render_plot(coords):
-    xs, ys = zip(*coords)
+# Med litt hjelp av Christoffer Slettebø
+def render_plot(verdi):
+    ny_tuple=data_plot(verdi)
 
-    x_max = max(xs)
-    x_min = min(xs)
-    y_max = max(ys)
-    y_min = min(ys)
+    maks_x = max(ny_tuple[0])+1
+    min_x = min(ny_tuple[0])
+    maks_y = max(ny_tuple[1])
+    min_y = min(ny_tuple[1])-1
 
-    x_diff = x_max - x_min + 1
+    tegning = "#"*(maks_x - min_x + 2)+"\n"
 
-    ramme = "#" * (x_diff + 2)
-    plot = ""
+    for ys in range(maks_y,min_y,-1):
+        tegning += "#"
 
-    for i in reversed(range(y_min, y_max + 1)):
-        plot += "#"
-        if i in ys:
+        for xs in range(min_x,maks_x,1):
 
-            for k, j in enumerate(ys):
+            if (xs,ys) in verdi:
+                    tegning += "*"
 
-                if j == i:
+            else:
+                    tegning += " "
 
-                    for n in range(x_min, x_max + 1):
+        tegning +="#"
+        tegning +="\n"
+    tegning += "#"*(maks_x - min_x + 2)
+    return tegning
 
-                        if n != xs[k]:
-                            plot += " "
+def data_plot(liste):
+    tilListe = list(liste)
+    liste1=[]
+    liste2=[]
 
-                        if n == xs[k]:
-                            plot += "*"            
+    for x in tilListe:
+        a=0
 
-        else:
-            plot += " " * (x_diff)
-            
-        plot += "#" + '\n'
+        for verdi in x:
+            if a==0:
+                liste1.append(verdi)
+                a+=1
 
-    resultat = ramme + '\n' + plot + ramme 
+            else:
+                liste2.append(verdi)
+                a==0
 
-    return resultat
-    
+    plot_render = (liste1,liste2)
 
-print(render_plot([(2, 3), (-1, 2), (1, -1), (0, 1)]))
+    return plot_render
 
-print(render_plot([(473, -515)]))
+#print(render_plot([(2, 3), (-1, 2), (1, -1), (0, 1)]))
 
-print(render_plot([(-3, 9), (-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4), (3, 9)]))
+#print(render_plot([(473, -515)]))
+
+#print(render_plot([(-3, 9), (-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4), (3, 9)]))
