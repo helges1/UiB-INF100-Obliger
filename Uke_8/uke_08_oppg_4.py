@@ -31,37 +31,32 @@ while count > 0:
     max_count += 1
     max_count1 += 1
 
-# Sette Xer
 
-# a_tall_rev = a_tall[::-1]
-# X = []
-# tot = 0
-# telle = 0
-# while max_count1 > 0 :
+def print_x(minst):
+    coins = a_tall
+    x = []
 
-#     if tot <= minst and 16 < tot +  a_tall_rev[telle] :
-
-#         X.append("X")
-#         max_count1 -= 1
-#         tot += a_tall_rev[telle]
-#         telle += 1
+    for c in coins[::-1]:
         
-        
-#     else:
-#         X.append(" ")
-#         max_count1 -= 1
+        while minst >= c:
+            
+            x.append("X")
+            minst -= c
+            break
+        else:
+            
+            x.append(" ")   
+            
+    return x[::-1]
 
-#         telle += 1
-#     print(tot)
-
-# X = X[::-1]
-
-se på oppgave 1
+X = print_x(minst)
 
 while max_count > 0:
-    print(f"    {a_tall[count]}     {b_tall[count]}")
+    print(f"{X[count]}    {a_tall[count]}     {b_tall[count]}")
     max_count -= 1
     count += 1
+
+print("=========================")
 
 
 
