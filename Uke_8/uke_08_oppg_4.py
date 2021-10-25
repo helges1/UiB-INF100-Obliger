@@ -38,7 +38,6 @@ def print_x(minst):
     for c in mins[::-1]:
         
         while minst >= c:
-            
             x.append("X")
             minst -= c
             break
