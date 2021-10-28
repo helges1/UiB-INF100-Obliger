@@ -1,8 +1,15 @@
 def first_letter_last_word(filename):
     with open(filename, encoding="utf8") as f:
-        x = f.readlines()
-        x = x[0]
-        return(x[::-1])
+        fil = f.readlines()
+        count = 0
+        bokstaver = []
 
-     
-print(first_letter_last_word("askeladden.txt",))
+        while count < len(fil):
+            words = fil[count].split()
+            last = words[-1]
+            bokstaver.append(last[0])
+            count += 1
+        
+        return ''.join(bokstaver)
+
+# print(first_letter_last_word("askeladden.txt",))
