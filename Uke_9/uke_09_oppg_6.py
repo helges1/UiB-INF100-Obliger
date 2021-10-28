@@ -10,8 +10,8 @@ in_storage = {
 
 while bok != "":
     if in_storage.get(bok) == None:
-        print("Vi har", 10, "av", '"' + bok + '"')
         in_storage[bok] = 10
+        print("Vi har", in_storage.get(bok), "av", '"' + bok + '"')
         print()
         bok = input("Tittel: ")
         
