@@ -22,7 +22,7 @@ def rename_from_data(filename):
         for i in range(len(liste_fil)):
             f.write(f"{liste_fil[i][0]} {liste_fil[i][1]} {liste_fil[i][2]} {liste_fil[i][3]}\n")
 
-# print(rename_from_data("qwerty.txt"))
+print(rename_from_data("qwerty.txt"))
 
 # namelist = ["qwghlm.txt", "qwerty.txt"]
 # print(rename_all(namelist))
