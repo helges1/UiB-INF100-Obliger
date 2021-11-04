@@ -10,14 +10,15 @@ def kast_n_2(n):
     print_histo(randomnumbers)
     
 def print_histo(xs):
-    from collections import Counter
-    counter = Counter(range(2,13))
-    for tall in xs:
-        counter[tall]+=1
-    histogramet=""
-    n = 3444
-    for tall in sorted(counter.items()):
-        histogramet+=(f'{tall[0]:2} {int((((tall[1]-1)*100)/n))*"*"}')
-    print (histogramet)
+
+    tall = xs
+    tot = collections.Counter(tall)
+    histogram = ""
+
+    for x in range(2, 13):
+        histogram += f"{x:2} {int(tot[x]/len(tall)*100)*'*'}"
+        
+
+    return(histogram)
 
 print (kast_n_2(3444))
