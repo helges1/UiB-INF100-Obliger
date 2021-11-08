@@ -10,10 +10,10 @@ ys_2 = [3 * sin(x) for x in xs]
 plt.plot(xs, ys_1, "-.r")
 plt.plot(xs, ys_2, "--b")
 
-# Første interseksjonen.
-# https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.arrow.html
-plt.annotate("", xy=(0, 0), xytext=(0.5, 0.5),
-             arrowprops=dict(arrowstyle="->"))  
+# Første interseksjonen
+plt.annotate("", xy=(3.20, 0), xytext=(xs[3], ys_1[3]), arrowprops=dict(arrowstyle="->"))
+plt.text(xs[0], ys_1[-1], "Første interseksjonen")
+
 
 
 # savefig lagrer filene

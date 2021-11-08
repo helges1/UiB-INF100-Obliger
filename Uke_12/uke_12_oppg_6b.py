@@ -6,7 +6,7 @@ lons = []
 with open("Akvakulturregisteret.csv", newline="", encoding="iso-8859-1") as csvfile:
     akvareader = csv.reader(csvfile, delimiter=";")
     for row in akvareader:
-        if row[12] == "Laks":
+        if row[12] == "Laks": # endre dennne linjen til å velge hvilke arter som skal vises
             try:
                 lat = float(row[-2])  # latitude is second last
                 lon = float(row[-1])  # longitude is last
@@ -23,7 +23,7 @@ try:
     plt.savefig("uke_12_oppg_6b.png")
     plt.show()
 
-    print(len(lats))
+
 
 
 except (ImportError, ModuleNotFoundError) as e:

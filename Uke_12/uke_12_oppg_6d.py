@@ -1,4 +1,4 @@
-# Kakediagram over formål
+# Lag et kakediagram over de ulike formolene som er oppgitt i .csv filen.
 
 import csv
 import matplotlib.pyplot as plt
