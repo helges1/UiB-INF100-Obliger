@@ -7,8 +7,8 @@ xs = [n / 10 for n in range(101)]
 ys_1 = [sin(x) for x in xs]
 ys_2 = [3 * sin(x) for x in xs]
 
-plt.plot(xs, ys_1, ".-g")
-plt.plot(xs, ys_2, "-.y")
+plt.plot(xs, ys_1, ".g")
+plt.plot(xs, ys_2, "-y")
 
 # savefig lagrer filene
 plt.savefig("uke_12_oppg_1.png")

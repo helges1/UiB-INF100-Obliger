@@ -4,6 +4,6 @@ def read_first_col(file):
         first_col = []
         for line in lines:
             first_col.append(line.split(' ')[0])
-    return "\n".join(first_col)
+    return("\n".join(first_col))
 
 print(read_first_col("2019-06-01_Oslo.csv"))
