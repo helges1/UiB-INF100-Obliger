@@ -16,4 +16,4 @@ while(_day.year < 2001):
 		month += 1
 	_day = datetime.date(year,month,1)
 
-print(counter)
+#print(counter)
