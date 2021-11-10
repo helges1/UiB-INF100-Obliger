@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from math import sin
+from math import sin, pi
 
 # liste med x-verdier
 xs = [n / 10 for n in range(101)]
@@ -11,8 +11,7 @@ plt.plot(xs, ys_1, "-.r")
 plt.plot(xs, ys_2, "--b")
 
 # Første interseksjonen
-plt.annotate("", xy=(3.20, 0), xytext=(xs[3], ys_1[3]), arrowprops=dict(arrowstyle="->"))
-plt.text(xs[0], ys_1[-1], "Første interseksjonen")
+plt.annotate("Føsrste interseksjonen", xy = (pi,0), xytext=(1, -2,), arrowprops=dict(facecolor='black', shrink=0.05), )
 
 
 
